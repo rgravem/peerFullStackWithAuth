@@ -32,7 +32,7 @@ Use branching and github effectively. Prioritize your tasks. We are directly mod
 
 Auth0 reference: https://github.com/devjanaprime/auth0Example
 
-Branching reference: https://github.com/devjanaprime/MEANie
+Branching reference: https://github.com/devjanaprime/MEANie (bottom half for readme)
 
 Next Steps
 ----------
