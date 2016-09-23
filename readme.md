@@ -1,7 +1,7 @@
 Full Stack with Auth Peer Project
 =================================
 
-![our shelf](public/images/shelf.JPG)
+![our shelf](public/images/piShelf.JPG)
 
 Technologies
 ------------
