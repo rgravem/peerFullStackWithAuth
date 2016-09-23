@@ -33,3 +33,12 @@ Use branching and github effectively. Prioritize your tasks. We are directly mod
 Auth0 reference: https://github.com/devjanaprime/auth0Example
 
 Branching reference: https://github.com/devjanaprime/MEANie
+
+Next Steps
+----------
+* only logged in users can remove objects from the shelf
+* logged in users can only remove their objects from the shelf
+* show list of users only to logged in users
+* filter output by user (only show items by any chosen user)
+* users can re-order shelf
+* styling
