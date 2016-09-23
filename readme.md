@@ -16,7 +16,7 @@ Technologies
 
 Project Description
 -------------------
-Our client, Prime Digital Academy: Room 2, has asked for an app to simulate the behaviour of their shelf. That is, only registered members of the class can add items to the shelf, but anyone can view the shelf.
+Our client, Prime Digital Academy: Room 2, has asked for an app to simulate the behaviour of their shelf. That is, a list of items placed on the classroom shelf.
 
 Any visitor to the page can view the shelf, but only logged in users should be able to place objects on the shelf.
 
