@@ -8,6 +8,13 @@ console.log('connected to shelf db');
 
 app.use(bodyParser.json());
 
+app.get('/', function(req, res){
+	var indexFile=path.join(__dirname, '..public/views/index.html');
+	res.sendFile(indexFile);
+});
+
+app.use(express.static('public'));
+
 var port = process.env.PORT || 3030;
 
 var server = app.listen(port, function(){
