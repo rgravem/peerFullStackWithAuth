@@ -6,6 +6,9 @@ var mongoose = require('mongoose');
 var connection = 'mongodb://locahost:27017/shelf';
 console.log('connected to shelf db');
 
+
+var models = require('../models/itemModel');
+
 app.use(bodyParser.json());
 
 app.get('/', function(req, res){
