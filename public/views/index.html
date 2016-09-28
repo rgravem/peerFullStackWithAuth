@@ -20,7 +20,7 @@
       <div ng-show='showUser'>
         <p> You are logged in as, {{ userProfile.name }}!<button ng-click='logOut()'>Log Out</button></p>
       </div>
-      <div ng-controller="addController">
+      <div ng-controller="addController" ng-show='showUser'>
         <form>
           <label for = "description">Item Description:
             <input ng-model = "description" type = "text">
