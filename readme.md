@@ -19,7 +19,7 @@ Our client, **Prime Digital Academy: Room 2**, has asked for an app to simulate 
 
 Any visitor to the page can view the shelf, but only logged in users should be able to place objects on the shelf.
 
-This will require some research, design, an implementation. Include a readme.md that includes the names of the group members and your team name/number.
+This will require some research, design, an implementation. Include a readme.md that includes the names of the group members and your team name/number. As well as any planning/docs. These can be in digital format or even pics of whiteboard/notebook sketches.
 
 Shelf Object
 ------------
