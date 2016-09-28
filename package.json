@@ -1,0 +1,27 @@
+{
+  "name": "peerfullstackauth",
+  "version": "1.0.0",
+  "description": "Full Stack with Auth Peer Project =================================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devjanaprime/peerFullStackWithAuth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devjanaprime/peerFullStackWithAuth/issues"
+  },
+  "homepage": "https://github.com/devjanaprime/peerFullStackWithAuth#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.1"
+  }
+}
