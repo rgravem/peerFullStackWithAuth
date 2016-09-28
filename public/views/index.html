@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <title>Peer Full Stack</title>
+    <script src="../vendors/angular.min.js" charset="utf-8"></script>
+    <script src="../vendors/angular-route.min.js" charset="utf-8"></script>
+    <script src="../scripts/client.js" charset="utf-8"></script>
+    <script src="../scripts/controllers/addController.js" charset="utf-8"></script>
+    <script src="../scripts/controllers/homeController.js" charset="utf-8"></script>
   </head>
   <body>
-
+    <h2>Room Two Shelf</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#addView">Add</a></li>
+    </ul>
+    <main ng-view></main>
   </body>
 </html>
