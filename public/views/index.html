@@ -20,6 +20,19 @@
       <div ng-show='showUser'>
         <p> You are logged in as, {{ userProfile.name }}!<button ng-click='logOut()'>Log Out</button></p>
       </div>
+      <div ng-controller="addController">
+        <form>
+          <label for = "description">Item Description:
+            <input ng-model = "description" type = "text">
+          </label>
+          <label for = "placer">Placer of Item:
+            <input ng-model = "placer" type = "text">
+          </label>
+          <label for = "image">Item Image:
+            <input ng-model = "image" type = "text">
+          </label>
+        </form>
+      </div>
     </div>
   </body>
 </html>

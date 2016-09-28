@@ -53,6 +53,16 @@ myApp.controller('authController', ['$scope', '$http', function($scope, $http){
     });
   }; // end logout
   $scope.init();
+
+
+}]);
+
+myApp.controller('addController', ['$scope', '$http', function($scope, $http) {
+  console.log('in addController');
+
+
+
+
 }]);
 var emptyLocalStorage = function(){
   localStorage.removeItem('userProfile');
