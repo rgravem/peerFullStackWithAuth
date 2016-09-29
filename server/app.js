@@ -3,12 +3,20 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var path = require('path');
+var mongoURI = 'mongodb://localhost:27017/shelf';
+var MongoDB = mongoose.connect(mongoURI).connection;
 
-var connection = 'mongodb://locahost:27017/shelf';
-console.log('connected to shelf db');
+// mongo db connection error handeling
+MongoDB.on('error', function (err) {
+    console.log('mongodb connection error:', err);
+});
+
+MongoDB.once('open', function () {
+  console.log('mongodb connection open!');
+});
 
 
-var models = require('../models/itemModel');
+var Items = require('../models/itemModel');
 
 app.use(bodyParser.json());
 
@@ -39,12 +47,13 @@ app.post('/shelf', function(req, res){
 
 app.get('/shelf', function(req, res){
 	console.log('in item get');
-	Item.find({}, function(err, foundItems){
+	Items.find({},function(err, foundItems){
 		if(err){
 			console.log('error getting item');
 			res.sendStatus(500);
 		} else{
 			console.log('succeeded in getting items');
+			console.log("these were found:", foundItems);
 			res.send(foundItems);
 		}
 	}); //end Item find
