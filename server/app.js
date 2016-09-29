@@ -17,7 +17,7 @@ app.get('/', function(req, res){
 	res.sendFile(indexFile);
 });
 
-app.post('/', function(req, res){
+app.post('/shelf', function(req, res){
 	console.log('in items post');
 	console.log('req.body is', req.body);
 	var item = req.body;
@@ -37,7 +37,7 @@ app.post('/', function(req, res){
 	}); //end newItem save
 });//end app post
 
-app.get('/', function(req, res){
+app.get('/shelf', function(req, res){
 	console.log('in item get');
 	Item.find({}, function(err, foundItems){
 		if(err){
