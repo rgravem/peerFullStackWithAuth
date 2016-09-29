@@ -1,5 +1,6 @@
 var lock = Auth0Lock( 'iIbNnZ1R4Sh6OMUwLSXk2KPF4vAABw0q', 'rgravem.auth0.com' );
 var logOutUrl = 'https://rgravem.auth0.com/v2/logout';
+
 myApp.controller("homeController", ['$scope','$http', function($scope, $http){
 
   //run controller load

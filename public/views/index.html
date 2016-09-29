@@ -10,9 +10,9 @@
     <script src="../vendors/angular.min.js" charset="utf-8"></script>
     <script src="../vendors/angular-route.min.js" charset="utf-8"></script>
     <script src="../scripts/client.js" charset="utf-8"></script>
-    <script src="../scripts/controllers/addCtrl.js" type="text/javascript"></script>
-    <script src="../scripts/controllers/homeCtrl.js" type="text/javascript"></script>
-    <script src="../scripts/controllers/viewCtrl.js" type="text/javascript"></script>
+    <script src="../scripts/controllers/addCtrl.js" charset="utf-8"></script>
+    <script src="../scripts/controllers/homeCtrl.js" charset="utf-8"></script>
+    <script src="../scripts/controllers/viewCtrl.js" charset="utf-8"></script>
 
   </head>
   <body>
@@ -33,13 +33,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#/view">View</a>
+                        <a href="#view">View</a>
                     </li>
                     <li>
-                        <a href="#/add">Add</a>
+                        <a href="#add">Add</a>
                     </li>
                 </ul>
             </div>
@@ -58,27 +58,8 @@
       </div>
       <!-- /.row -->
 
-    <div ng-controller='authController'>
-    <div ng-hide='showUser'>
-        Please log in to add to the shelf:<button ng-click='logIn()'>Log In</button>
-      </div>
-      <div ng-show='showUser'>
-        <p> You are logged in as, {{ userProfile.name }}!<button ng-click='logOut()'>Log Out</button></p>
-      </div>
-      <div ng-controller="addController" ng-show='showUser'>
-        <form>
-          <label for = "description">Item Description:
-            <input ng-model = "description" type = "text">
-          </label>
-          <label for = "placer">Placer of Item:
-            <input ng-model = "placer" type = "text">
-          </label>
-          <label for = "image">Item Image:
-            <input ng-model = "image" type = "text">
-          </label>
-            <button type="button" ng-click="addItem()">Add Item</button>
-        </form>
-      </div>
+
+
     </div>
   </div>
   <!-- /.container -->
