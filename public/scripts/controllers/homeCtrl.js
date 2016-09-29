@@ -2,7 +2,6 @@ var lock = Auth0Lock( 'iIbNnZ1R4Sh6OMUwLSXk2KPF4vAABw0q', 'rgravem.auth0.com' );
 var logOutUrl = 'https://rgravem.auth0.com/v2/logout';
 myApp.controller("homeController", ['$scope','$http', function($scope, $http){
 
-
   //run controller load
     $scope.init = function(){
       console.log('in init');
@@ -52,3 +51,8 @@ myApp.controller("homeController", ['$scope','$http', function($scope, $http){
 
   console.log("on the Home Page");
 }]);
+
+var emptyLocalStorage = function(){
+  localStorage.removeItem('userProfile');
+  localStorage.removeItem( 'userToken' );
+};
