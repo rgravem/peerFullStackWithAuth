@@ -99,7 +99,7 @@ myApp.controller('addController', ['$scope', '$http', function($scope, $http) {
 
 
 
-}]);
+}]); // end addController
 var emptyLocalStorage = function(){
   localStorage.removeItem('userProfile');
   localStorage.removeItem( 'userToken' );
