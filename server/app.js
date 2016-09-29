@@ -61,7 +61,7 @@ app.get('/shelf', function(req, res){
 
 app.use(express.static('public'));
 
-var port = process.env.PORT || 3030;
+var port = process.env.PORT || 3032;
 
 var server = app.listen(port, function(){
 	var port = server.address().port;
