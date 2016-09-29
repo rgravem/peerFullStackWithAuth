@@ -2,16 +2,58 @@
 <html ng-app="myApp">
   <head>
     <meta charset="utf-8">
-    <title>Peer Full Stack</title>
-    <script src="https://cdn.auth0.com/js/lock-8.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>#JustPiShelfThings</title>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://cdn.auth0.com/js/lock-8.1.min.js"></script>
     <script src="../vendors/angular.min.js" charset="utf-8"></script>
     <script src="../vendors/angular-route.min.js" charset="utf-8"></script>
     <script src="../scripts/client.js" charset="utf-8"></script>
   </head>
   <body>
-    <header><img src="../images/piShelf.JPG" alt="" height="100px" width="500px" /></header>
-    <h2>Room Two Shelf</h2>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Pi Shelf</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#/view">View</a>
+                    </li>
+                    <li>
+                        <a href="#/add">Add</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+      <main ng-view></main>
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <h1>Room Two Shelf</h1>
+              <p class="lead">All the shelf things!</p>
+          </div>
+      </div>
+      <!-- /.row -->
+
     <div ng-controller='authController'>
     <div ng-hide='showUser'>
         Please log in to add to the shelf:<button ng-click='logIn()'>Log In</button>
@@ -33,5 +75,7 @@
         </form>
       </div>
     </div>
+  </div>
+  <!-- /.container -->
   </body>
 </html>
