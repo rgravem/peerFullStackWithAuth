@@ -6,9 +6,10 @@ myApp.controller("addController", ['$scope','$http', function($scope, $http){
       placer: $scope.placer,
       image: $scope.image
     };
+    console.log('newItem');
     $http({
-      url: '/shelf',
-      type: 'POST',
+      method: 'POST',
+      url: '/addToShelf',
       data: newItem
     }).then(function (response){
           console.log('http post success:', response);

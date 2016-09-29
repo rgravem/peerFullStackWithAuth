@@ -25,15 +25,15 @@ app.get('/', function(req, res){
 	res.sendFile(indexFile);
 });
 
-app.post('/shelf', function(req, res){
+app.post('/addToShelf', function(req, res){
 	console.log('in items post');
 	console.log('req.body is', req.body);
 	var item = req.body;
-	var newItem = new Item({
+	var newItem = new Items({
 		description: item.description,
 		placer: item.placer,
 		image: item.image
-	});//
+	});
 	newItem.save(function(err){
 		if(err){
 			console.log('err saving item', err);
