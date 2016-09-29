@@ -50,7 +50,8 @@ app.get('/shelf', function(req, res){
 	}); //end Item find
 });//end get
 
-app.use(express.static('/public'));
+// set up static public folder
+app.use(express.static('public'));
 
 var port = process.env.PORT || 3030;
 
