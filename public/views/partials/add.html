@@ -1,5 +1,4 @@
-<!-- ng-show='showUser' -->
-<div>
+<div ng-show='showUser'>
   <form>
     <label for = "description">Item Description:
       <input ng-model = "description" type = "text">
@@ -12,4 +11,7 @@
     </label>
       <button type="button" ng-click="addItem()">Add Item</button>
   </form>
+  <div ng-hide="showUser">
+    <p>Please login to add items.</p>
+  </div>
 </div>
